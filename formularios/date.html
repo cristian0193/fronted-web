@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+
+      <form class="" action="index.html" method="post">
+        <input type="date" min="1900-01-01" max="2010-01-01">
+        <br/>
+        <br/>
+        <input type="datetime-local">
+        <br/>
+        <br/>
+        <span id="valor"></span>
+        <input type="range" max="100" min="0" step="10">
+      </form>
+
+    <script type="text/javascript">
+
+      let rangeEl = document.querySelector('input[type="range"]');
+
+      rangeEl.addEventListener('input',function(){
+        document.querySelector('#valor').innerHTML = rangeEl.value;
+      })
+
+    </script>
+
+  </body>
+</html>

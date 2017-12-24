@@ -1,0 +1,9 @@
+#element {
+  overflow: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+#canvas {
+  background-color: blue;
+}

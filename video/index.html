@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Etiqueta Video</title>
+</head>
+  <body>
+    <video id="video" src="./burro.mp4" controls></video>
+
+    <button id="playButton" >Reproducir</button>
+    <button id="pauseButton">Pausar</button>
+    <button id="stopButton">Detener</button>
+    <button id="atrasButton">&lt;&lt;</button>
+    <button id="adelanteButton">&gt;&gt;</button>
+    <button id="subirButton">+</button>
+    <button id="bajarButton">-</button>
+
+    <script type="text/javascript">
+
+        let video = document.getElementById('video');
+
+        let play = document.getElementById('playButton');
+        let pause = document.getElementById('pauseButton');
+        let stop = document.getElementById('stopButton');
+        let atras = document.getElementById('atrasButton');
+        let adelante = document.getElementById('adelanteButton');
+        let subir = document.getElementById('subirButton');
+        let bajar = document.getElementById('bajarButton');
+
+        play.addEventListener('click',function(){
+            video.play();
+        })
+
+        pause.addEventListener('click',function(){
+            video.pause();
+        })
+
+        stop.addEventListener('click',function(){
+            video.pause();
+            video.currentTime = 0;
+        })
+
+        atras.addEventListener('click',function(){
+            video.currentTime -= 1;
+        })
+
+        adelante.addEventListener('click',function(){
+              video.currentTime += 1;
+        })
+
+        video.addEventListener('canplay', function(){
+          console.log(video.duration);
+        })
+
+        subir.addEventListener('click',function(){
+              if(video.volume <= 0.9) video.volume += 0.1;
+        })
+
+        bajar.addEventListener('click',function(){
+              if(video.volume >= 0.1) video.volume -= 0.1;
+        })
+
+    </script>
+  </body>
+</html>

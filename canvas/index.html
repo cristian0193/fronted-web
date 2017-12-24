@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style media="screen">
+    canvas{border:solid}
+  </style>
+
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+<script >
+
+  let canvas = document.getElementById('canvas');
+
+  canvas.width = 800;
+  canvas.height = 600;
+
+  let contexto = canvas.getContext('2d');
+  let finalAngle = 0;
+
+//LLenar un circulo de forma automatica
+  setInterval(function(){
+    finalAngle += 0.01;
+    contexto.beginPath();
+    contexto.arc(500, 500,80,0,Math.PI * finalAngle);
+    contexto.closePath();
+    contexto.fill();
+  },1000 / 20);
+
+// Dibujar Lineas
+  contexto.beginPath();
+
+  contexto.moveTo(200,200);
+  contexto.lineTo(400,300);
+  contexto.lineTo(280,350);
+
+  contexto.closePath();
+  contexto.stroke();
+
+  //fillText
+  contexto.font = '700 46px Helvetica';
+  contexto.fillText("Hola Mundo",100,50);
+
+  //strokeText
+  contexto.strokeStyle = 'red';
+  contexto.strokeText("Hola Mundo",100,100);
+
+  //Sombras para las figuras
+  contexto.save();
+
+  contexto.font = '700 46px Helvetica'; //Dibujo el texto
+
+  contexto.shadowColor = 'rgba(0,0,0,0.6)'; //tono transparente
+  contexto.shadowOffsetX = 3; //efecto de sombre el X
+  contexto.shadowOffsetY = 3; //efecto de sombre el Y
+  contexto.shadowBlur = 5; //grosor de la sombre
+
+  contexto.fillText("Hola Mundo",100,150);
+
+  contexto.restore();
+
+</script>
+</body>
+
+</html>

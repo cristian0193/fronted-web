@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Hola Mundo</title>
+  <style media="screen">
+     /* pone chulo ok cuando el campo es valido */
+      input:valid + span:after{
+        content: '\f00c';
+        font-family: FontAwesome;
+        color:green;
+      }
+     /* pone chulo x cuando el campo es invalido */
+      input:invalid + span:after{
+        content: '\f00d';
+        font-family: FontAwesome;
+        color:red;
+      }
+
+  </style>
+
+</head>
+<body>
+    <form class="" action="index.html" method="post">
+        <div>
+          <input type="text">
+          <span></span>
+        </div>
+        <div>
+          <input type="text" required>
+          <span></span>
+        </div>
+        <div>
+          <input type="email" required>
+          <span></span>
+        </div>
+    </form>
+    <button id="button">Probar</button>
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>
