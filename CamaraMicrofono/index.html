@@ -8,8 +8,16 @@
   <title>Camara</title>
 </head>
 
+
 <body>
-  <video id="video" width="400" height="400" autoplay muted></video>
+  <img src="bigote.png" id="bigote" style="display:none;">
+  <canvas id="canvas" width="800" height="600"></canvas>
+  <video id="video" autoplay muted style="display:none;" width="800" height="600"></video>
+  <select id="camera-selector">
+    <option value="-1">Seleccione</option>
+  </select>
+  <script src="clmtrackr-rostro/build/clmtrackr.js"></script>
+  <script src="clmtrackr-rostro/models/model_pca_20_svm.js"></script>
   <script type="text/javascript" src="./funciones.js"></script>
 </body>
 
