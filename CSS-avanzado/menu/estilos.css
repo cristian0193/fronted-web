@@ -1,0 +1,81 @@
+.clearfix::after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  line-height: 0;
+  visibility: hidden;
+  width: 0px;
+}
+
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+}
+
+/*Estilo Base*/
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+}
+
+ul li {
+  margin: 0px 10px;
+  padding: 0px;
+  float: left;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none
+}
+
+ul#ejm5 {
+  background-color: #3FA46A;
+  overflow: hidden;
+  padding: 20px 10px
+}
+
+ul#ejm5 li a {
+  position: relative;
+  line-height: 40px;
+  overflow: hidden;
+  color: #fff;
+  perspective: 1000px;
+}
+
+ul#ejm5 li a span {
+  position: relative;
+  display: inline-block;
+  padding: 0px 14px;
+  background: #247547;
+  transition: transform 0.3s ease 0s;
+  transform-origin: 50% 0px 0px;
+  transform-style: preserve-3d;
+}
+
+ul#ejm5 li a span:before {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px 14px;
+  background: #2e8d57;
+  content: attr(data-title);
+  transition: #000 0.3s ease 0s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0px 0px;
+}
+
+ul#ejm5 li a:hover span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+ul#ejm5 li a:hover span::before {
+  background: 0% 0% #2e8d57;
+}
