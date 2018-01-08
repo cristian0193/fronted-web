@@ -1,0 +1,32 @@
+body {
+  /*carga nuestra iamgen local o de sitio web*/
+  background-image: url("souparck.png");
+  /*Repite la imagen de forma horizontal */
+  /*background-repeat: repeat-x;*/
+  /*Repite la imagen de forma vertical */
+  /*background-repeat: repeat-y;*/
+  /*No permite que se repita la imagen */
+  background-repeat: no-repeat;
+  /*Cambia el color del background (fondo) para nuestra imagen*/
+  background-color: white;
+  /*posiciona nuestra imagen por medio de porcentajes*/
+  background-position: 50% 50%;
+  /*posicion la imagen en rigth, center, topp o botton*/
+  /*background-position: center top;*/
+  /*fija la imagen en la posicion*/
+  background-attachment: fixed;
+  /*Establece un tamaño al background*/
+  background-size: 200px 200px;
+  /*Creacion de Gradiantes*/
+  /*background: linear-gradient(to left, red, yellow);*/
+  /* implementacion con grados */
+  /*background: linear-gradient(-80deg, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));*/
+  /* implementacion con porcentajes */
+  /*background: repeating-linear-gradient(-80deg, red, yellow 10%, green 20%);*/
+  /* implementacion con radio o circular */
+  /*background: repeating-radial-gradient(circle, red 5%, yellow 10%, green 15%);*/
+}
+
+.space {
+  height: 600px;
+}

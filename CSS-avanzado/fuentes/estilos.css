@@ -1,0 +1,35 @@
+h1 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border: double #eee 10px;
+  border-radius: 10px;
+  text-align: center;
+  /*propiedades para fuentes*/
+  /*font-family cambia la fuente, en este caso utilziamos API de google*/
+  font-family: 'Roboto', sans-serif;
+  /*font-style cambia el estilo italic, bold, normal*/
+  font-style: italic;
+  /*font-size proporsional tamaño a la fuente, 1em = 16px*/
+  font-size: 2em;
+  /*cambia el color de la fuente*/
+  color: white;
+  /*permite colocar una sombra al texto parametros (horizontal, vertical, definicion, color)*/
+  text-shadow: 2px 2px 4px black;
+}
+
+p {
+  /*Permite ajustar el texto a la pantalla (se recomienda este por responsive)*/
+  white-space: pre-line;
+  /*Respeta los saltos de linea y adicional ajusta a la pantalla*/
+  /*white-space: pre-wrap;*/
+  /*agrega espacio entre palabras*/
+  word-spacing: 1px;
+  /*No permite que se visualize en pantalla*/
+  display: none;
+}
+
+a {
+  /*Quita la linea link de la fuente, existen: none, line-through, overline, underline */
+  text-decoration: none;
+  /*Convierte la letra en mayuscula, puede ser : uppercase, lowercase, capitalize*/
+  text-transform: uppercase;
+}

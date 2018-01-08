@@ -1,0 +1,64 @@
+body {
+  background-color: #eee;
+}
+
+h1 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border: double #eee 10px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.titulo {
+  margin: 5% auto;
+  width: 50%;
+}
+
+div.polaroid {
+  position: relative;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+  display: block;
+}
+
+div.polaroid:hover {
+  /*movemos la figura en X y Y*/
+  /*transform: translate(50px, 50px);*/
+  /*Movemos la figura solo en X*/
+  /*transform: translateX(50px);*/
+  /*Movemos la figura solo en Y*/
+  /*transform: translateY(50px);*/
+  /*Mueve la figura 20 grados*/
+  /*transform: rotate(20deg);*/
+  /*scale: Agranda la Imange*/
+  transform: scale(1.5);
+}
+
+.polaroid img {
+  filter: grayscale(1);
+}
+
+.polaroid img:hover {
+  filter: grayscale(.2);
+}
+
+.texto {
+  text-align: center;
+}
+
+.imgtext {
+  position: absolute;
+  top: 8%;
+  left: 30px;
+  color: white;
+  font-size: 18px;
+}

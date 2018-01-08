@@ -1,0 +1,85 @@
+body {
+  background-color: #eee;
+}
+
+h1 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border: double #eee 10px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.goku1 {
+  margin-top: 5px;
+  border: double 10px black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.goku2 {
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.titulo {
+  /*width: 45%;*/
+  /*margin: auto;*/
+  margin: 5% auto;
+  width: 50%;
+}
+
+div.polaroid {
+  position: relative;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+  display: block;
+}
+
+.polaroid img {
+  /*Este atributo opaca el elemento o en este caso la imagen*/
+  /*opacity: .4;*/
+  /*Este atributo pone borrosa la imagen*/
+  /*filter: blur(2px);*/
+  filter: grayscale(1);
+}
+
+.polaroid img:hover {
+  /*por medio del hover se realiza el estilo cuando paso el mouse*/
+  /*opacity: 1;*/
+  /*Enfoca nuevamente nuestra imagen*/
+  /*filter: blur(0);*/
+  filter: grayscale(.2);
+}
+
+.texto {
+  text-align: center;
+}
+
+.imgtext {
+  position: absolute;
+  top: 8%;
+  left: 30px;
+  color: white;
+  font-size: 18px;
+}
+
+/*.thumb {
+  margin: 10px;
+  border: 5px solid #ddd;
+  width: 150px;
+}
+
+.thumb:hover {
+  width: 200px;
+  box-shadow: 0 0 2px 1px rgba(0, 146, 186, .8);
+}*/

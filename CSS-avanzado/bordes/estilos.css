@@ -1,0 +1,18 @@
+#ejemplo1 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  /*Estilos del borde : None, Solid, inset, Double, dotted, dashed, etc*/
+  border: inset rgba(0, 0, 0, 0.7) 5px;
+}
+
+#ejemplo2 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border-top-style: dashed;
+  border-left-style: blue;
+  border-bottom: dotted blue 5px;
+}
+
+#ejemplo3 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border: double gray 8px;
+  border-radius: 10px;
+}

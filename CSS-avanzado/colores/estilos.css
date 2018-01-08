@@ -1,0 +1,26 @@
+h1 {
+  /*Colores con Hexadecimal*/
+  /* background-color: #00FFFF; */
+  /*color: darkgreen;*/
+  text-align: center;
+  /*nos permite dar transparencia a nuestro objecto rgba(red, green, blue, transparencia)*/
+  color: rgb(0, 0, 255);
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url("cat.jpg");
+}
+
+.caja-div {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  background-color: hsl(180, 50%, 80%);
+  background-color: hsla(180, 50%, 80%, 0.9);
+}
+
+h3 {
+  background-color: #FDB934;
+}

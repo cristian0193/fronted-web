@@ -1,0 +1,33 @@
+h1 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border: double #eee 10px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.titulo {
+  position: relative;
+  width: 45%;
+  margin: auto;
+}
+
+.goku {
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid black;
+  margin-left: 45%;
+}
+
+.container {
+  position: relative;
+  border: 1px solid red;
+  height: 200px;
+  padding-top: 5px;
+  /*padding: nos permite separar los elementos de otros (top,right,bottom,left)*/
+  /*padding: 10px 5px 10px 5px;*/
+}

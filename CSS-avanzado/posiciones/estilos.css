@@ -1,0 +1,36 @@
+h1 {
+  background-color: hsla(18, 100%, 50%, 0.5);
+  border: double #eee 10px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.goku {
+  /*relative: Nos permite acomodar nuestra imagen o elementos en cualquier posicion*/
+  position: absolute;
+  /*Nos brinda una posicion hacia abajo*/
+  /*top: : 10px;*/
+  /*Nos brinda una posicion hacia izquierda*/
+  /*left: : 20px;*/
+  /*Nos brinda una posicion hacia derecha*/
+  /*right: 10px;*/
+  /*Nos brinda una posicion hacia arriba*/
+  /*bottom: 5px;*/
+  border-radius: 30px;
+}
+
+.titulo {
+  /*Nos permite acomodar nuestra imagen o elementos en posicion estatica*/
+  /*position: fixed;*/
+}
+
+.container {
+  position: relative;
+  border: 1px solid red;
+  height: 200px;
+}
