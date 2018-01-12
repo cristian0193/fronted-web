@@ -1,5 +1,5 @@
 class IndexForSiblingss {
-  static get(el) {
+  static get(el) { // este metodo obtiene el hijo segun el click que se haga en uno de los elementos
     let children = el.parentNode.children;
 
     for (var i = 0; i < children.length; i++) {
@@ -16,7 +16,7 @@ class Slider {
 
   constructor(selector, movimiento = true) {
     this.move = this.move.bind(this); //mueve el slider
-    this.moveByButton = this.moveByButton.bind(this);
+    this.moveByButton = this.moveByButton.bind(this); //captura el evento del boton seleccionado
     this.slider = document.querySelector(selector); //obtiene el selector del slider (div)
     this.itemsCount = this.slider.querySelectorAll(".container > *").length; //obtiene todos los item dentro del slider
     this.movimiento = movimiento;
