@@ -1,48 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8">
   <title>Hero Image</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="transformicons.css">
 </head>
 
 <body>
-  <div class="main-container">
-    <div style="lateral-menu">
+  <div class="overflow-control">
+    <div class="main-container">
 
-    </div>
-    <div class="content">
-      <nav class="nav">
+      <div class="lateral-menu">
         <li>Home</li>
         <li>Cursos</li>
         <li>Videos</li>
-      </nav>
+        <li>About</li>
+      </div>
 
-      <header class="hero-image">
-        <div>
-          <h1>Curso de controles y efectos</h1>
-          <p>Aprende a aplicas trends de diseño web</p>
+      <div class="content">
+        <nav class="nav">
+          <div class="button-nav">
+            <button type="button" class="tcon toggle-menu tcon-menu--arrow tcon-menu--arrow360left" aria-label="toggle menu">
+                <span class="tcon-menu__lines" aria-hidden="true"></span>
+                <span class="tcon-visuallyhidden">toggle menu</span>
+              </button>
+          </div>
+
+          <li>Home</li>
+          <li>Cursos</li>
+          <li>Videos</li>
+        </nav>
+        <header class="hero-image">
+          <div>
+            <h1>Curso de controles y efectos</h1>
+            <p>Aprende a aplicar trends de diseño web</p>
+          </div>
+        </header>
+
+        <div style="height:1200px">
+          <p>Hola</p>
+          <p>Hola</p>
+          <p>Hola</p>
+          <p>Hola</p>
+          <p>Hola</p>
+          <p>Hola</p>
+          <p>Hola</p>
+
+          <p>Hola</p>
+          <p>Hola</p>
         </div>
-      </header>
-
-      <div style="height: 1200px">
-        <p>Hola</p>
-        <p>Hola</p>
-        <p>Hola</p>
-        <p>Hola</p>
-        <p>Hola</p>
-        <p>Hola</p>
-        <p>Hola</p>
       </div>
     </div>
-
   </div>
 
-  <script type="text/javascript" src="funciones.js">
-  </script>
+  <script src="transformicons.js"></script>
+  <script src="funciones.js"></script>
 </body>
 
 </html>
