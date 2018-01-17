@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Filtros</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav>
+      <!-- si se requiere seleccionar varios filtros debemos cambiar el data-filter por data-toggle -->
+      <button type="button" data-filter="all">Todos</button>
+      <button type="button" data-filter=".general">Generales</button>
+      <button type="button" data-filter=".mobile">Móviles</button>
+      <button type="button" data-filter=".gaming">Juegos</button>
+      <button type="button" data-filter=".web">Web</button>
+    </nav>
+
+
+    <div class="card mix mobile">
+      <h3>Curso de iOS</h3>
+      <img src="./logos/ios-intermedio.png" alt="">
+    </div>
+
+    <div class="card mix mobile ">
+      <h3>Curso de Ionic + Firebase</h3>
+      <img src="./logos/ionic-firebase.png" alt="">
+    </div>
+
+    <div class="card mix general">
+      <h3>Curso de Kotlin</h3>
+      <img src="./logos/kotlin.png" alt="">
+    </div>
+
+    <div class="card mix gaming">
+      <h3>Curso de Juegos</h3>
+      <img src="./logos/coin.png" alt="">
+    </div>
+
+    <div class="card mix web">
+      <h3>Curso de mi primera página web</h3>
+      <img src="./logos/primera-pagina.png" alt="">
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="mixitup.min.js"></script>
+  <script type="text/javascript" src="funciones.js"></script>
+</body>
+
+</html>
